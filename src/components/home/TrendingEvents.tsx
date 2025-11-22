@@ -4,36 +4,7 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Calendar, MapPin, Users } from "lucide-react";
 import Image from "next/image";
-
-const EVENTS = [
-    {
-        id: 1,
-        title: "Neon Nights: Cyberpunk Art",
-        category: "Exhibition",
-        date: "Nov 12, 8:00 PM",
-        location: "Neo Tokyo Gallery",
-        attendees: 128,
-        image: "/neon_art_exhibition_1763816371236.png",
-    },
-    {
-        id: 2,
-        title: "React Summit 2025",
-        category: "Tech Conference",
-        date: "Dec 05, 9:00 AM",
-        location: "Moscone Center, SF",
-        attendees: 2400,
-        image: "/tech_conference_stage_1763816396216.png",
-    },
-    {
-        id: 3,
-        title: "Founder's Mixer",
-        category: "Networking",
-        date: "Nov 28, 6:30 PM",
-        location: "The Glass House",
-        attendees: 85,
-        image: "/networking_mixer_1763816414225.png",
-    },
-];
+import { EVENTS } from "@/lib/data";
 
 export const TrendingEvents = () => {
     return (
